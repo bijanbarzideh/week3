@@ -12,23 +12,14 @@
     <div class="page-header" >
         <h1>Gold Rush <small>Please select your discovery location</small></h1>
     </div>
-
     <div class="map" ng-click="mCtrl.addOnClick($event)">
         <div ng-repeat="clickLocation in mCtrl.clickLocation" >
             <div class="map-mark" style= "left : {{ clickLocation.x }}px ; top : {{ clickLocation.y }}px ">
-
             </div>
         </div>
-        <!-- <div class="map-mark" ng-style="{'left' : '200px' , 'top' : '200px'}"></div> -->
-        <!-- {{ marker }} -->
     </div>
     <div class="list-locate" >
-
         {{mCtrl.clickLocation}}
-
-</div>
+    </div>
 </body>
-
-
 </html>
-<!-- ng-style="{'left' : 'offsetX' , 'top' : 'offsetY' }" -->
