@@ -8,6 +8,7 @@ html{
  position: absolute;
  background-size: cover;
  border-radius: 100%;
+
 }
 .map{
     background-image: url("https://github.com/RefactorU/exercise-starters/blob/master/client-js/gold-rush/topo-co.jpg?raw=true");
@@ -16,4 +17,7 @@ html{
     background-size: cover;
     position:relative;
 
+}
+.list-locate{
+    height:100px;
 }
