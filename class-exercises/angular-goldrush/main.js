@@ -16,21 +16,22 @@ function markerCtrl(){
         mCtrl.addOnClick = function(event){
             //part 1 function finding the x and y values
             mCtrl.locationXY = {
-                x : event.x,
-                y : event.y,
-                offsetX : event.offsetX - 5,
-                offsetY : event.offsetY - 5,
+                x : event.x -5,
+                y : event.y -5,
+                offsetX : event.offsetX ,
+                offsetY : event.offsetY ,
             };
                 console.log(mCtrl.locationXY)
             //part 2 push offsetX and offsetY to the clickLocation array
-            mCtrl.clickLocation.push({ 'x' : mCtrl.locationXY.offsetX , 'y' : mCtrl.locationXY.offsetY});
+            mCtrl.clickLocation.push({ 'x' : mCtrl.locationXY.x , 'y' : mCtrl.locationXY.y});
                 console.log(mCtrl.clickLocation)
 
-
-
         }
-        //var locationIndex = mCtrl.clickLocation.indexOf(event);
 
+        mCtrl.removeLocation = function(index){
+            mCtrl.clickLocation.splice(index,1)
+            console.log(mCtrl.clickLocation)
+            }
 
 
     }

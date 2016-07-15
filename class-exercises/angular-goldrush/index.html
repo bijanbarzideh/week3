@@ -13,9 +13,10 @@
         <h1>Gold Rush <small>Please select your discovery location</small></h1>
     </div>
     <div class="map" ng-click="mCtrl.addOnClick($event)">
-        <div ng-repeat="clickLocation in mCtrl.clickLocation" >
-            <div class="map-mark" style= "left : {{ clickLocation.x }}px ; top : {{ clickLocation.y }}px ">
-            </div>
+
+    </div>
+    <div ng-repeat="clickLocation in mCtrl.clickLocation" >
+        <div class="map-mark" ng-click="mCtrl.removeLocation($index)"  style= "left : {{ clickLocation.x }}px ; top : {{ clickLocation.y }}px  ">
         </div>
     </div>
     <div class="list-locate" >
