@@ -16,10 +16,9 @@ function markerCtrl(){
         mCtrl.addOnClick = function(event){
             //part 1 function finding the x and y values
             mCtrl.locationXY = {
-                x : event.x -5,
-                y : event.y -5,
-                offsetX : event.offsetX ,
-                offsetY : event.offsetY ,
+                x : event.pageX -5,
+                y : event.pageY -5,
+                
             };
                 console.log(mCtrl.locationXY)
             //part 2 push offsetX and offsetY to the clickLocation array
